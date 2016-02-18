@@ -1,6 +1,8 @@
-package com.rogersdk.simpleloginmvp.interactors.login;
+package com.rogersdk.simpleloginmvp.domain.interactor;
 
 import android.os.Handler;
+
+import com.rogersdk.simpleloginmvp.ui.login.listener.OnLoginAttemptListener;
 
 /**
  * Created by rogerio on 17/02/16.
@@ -12,6 +14,7 @@ public class LoginInteractorImpl implements LoginInteractor {
     @Override
     public void login(final String login, final String password, final OnLoginAttemptListener listener) {
         new Handler().postDelayed( new Runnable() {
+            //TODO try to login in a service
             boolean hasError = false;
 
             @Override
@@ -31,6 +34,6 @@ public class LoginInteractorImpl implements LoginInteractor {
             }
 
 
-        }, 2000);
+        }, 1000);
     }
 }

@@ -1,4 +1,6 @@
-package com.rogersdk.simpleloginmvp.interactors.login;
+package com.rogersdk.simpleloginmvp.domain.interactor;
+
+import com.rogersdk.simpleloginmvp.ui.login.listener.OnLoginAttemptListener;
 
 /**
  * Created by rogerio on 17/02/16.

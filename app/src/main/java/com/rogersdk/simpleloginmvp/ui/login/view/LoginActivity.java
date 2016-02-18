@@ -1,4 +1,4 @@
-package com.rogersdk.simpleloginmvp.interactors.login;
+package com.rogersdk.simpleloginmvp.ui.login.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,8 +10,12 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.rogersdk.simpleloginmvp.HomeActivity;
 import com.rogersdk.simpleloginmvp.R;
+import com.rogersdk.simpleloginmvp.ui.home.HomeActivity;
+import com.rogersdk.simpleloginmvp.ui.login.presenter.LoginPresenterImpl;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by rogerio on 17/02/16.
@@ -19,28 +23,23 @@ import com.rogersdk.simpleloginmvp.R;
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener{
     public static final String TAG = "login";
 
-    private Button submit;
-    private EditText login, password;
-    private ProgressBar progressBar;
-    private TextView error;
+    @Bind(R.id.submit) Button submit;
+    @Bind(R.id.login) EditText login;
+    @Bind(R.id.password) EditText password;
+    @Bind(R.id.progressBar) ProgressBar progressBar;
+    @Bind(R.id.error) TextView error;
+
     private LoginPresenterImpl presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
 
-
-        login = (EditText) findViewById(R.id.login);
-        password = (EditText) findViewById(R.id.password);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        error = (TextView) findViewById(R.id.error);
-
-        submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(this);
 
         presenter = new LoginPresenterImpl(this);
-
     }
 
     @Override

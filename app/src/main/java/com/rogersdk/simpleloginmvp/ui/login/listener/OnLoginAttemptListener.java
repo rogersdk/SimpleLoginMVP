@@ -1,4 +1,4 @@
-package com.rogersdk.simpleloginmvp.interactors.login;
+package com.rogersdk.simpleloginmvp.ui.login.listener;
 
 /**
  * Created by rogerio on 17/02/16.

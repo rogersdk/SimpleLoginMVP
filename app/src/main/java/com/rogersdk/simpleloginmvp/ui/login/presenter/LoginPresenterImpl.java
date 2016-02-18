@@ -1,6 +1,12 @@
-package com.rogersdk.simpleloginmvp.interactors.login;
+package com.rogersdk.simpleloginmvp.ui.login.presenter;
 
 import android.util.Log;
+
+import com.rogersdk.simpleloginmvp.domain.interactor.LoginInteractor;
+import com.rogersdk.simpleloginmvp.domain.interactor.LoginInteractorImpl;
+import com.rogersdk.simpleloginmvp.ui.login.listener.OnLoginAttemptListener;
+import com.rogersdk.simpleloginmvp.ui.login.view.LoginActivity;
+import com.rogersdk.simpleloginmvp.ui.login.view.LoginView;
 
 /**
  * Created by rogerio on 18/02/16.
