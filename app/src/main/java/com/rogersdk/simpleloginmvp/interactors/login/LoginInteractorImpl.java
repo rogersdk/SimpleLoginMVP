@@ -1,4 +1,4 @@
-package com.rogersdk.simpleloginmvp;
+package com.rogersdk.simpleloginmvp.interactors.login;
 
 import android.os.Handler;
 

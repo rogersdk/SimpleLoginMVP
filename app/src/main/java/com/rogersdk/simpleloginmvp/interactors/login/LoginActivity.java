@@ -1,7 +1,6 @@
-package com.rogersdk.simpleloginmvp;
+package com.rogersdk.simpleloginmvp.interactors.login;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.rogersdk.simpleloginmvp.HomeActivity;
+import com.rogersdk.simpleloginmvp.R;
 
 /**
  * Created by rogerio on 17/02/16.

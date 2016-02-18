@@ -34,6 +34,7 @@ Thumbs.db
 .project
 
 # Android Studio
+app/*.iml
 *.iml
 .idea
 #.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
